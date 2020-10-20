@@ -10,7 +10,7 @@ if(getenv('DATABASE_URL')){ // if using the heroku database
 	$dbname = trim($connectionConfig['path'],'/');
 	$dbconn = pg_connect(
 		"host=".$host." ".
-		"user=".$user." ".
+		"user=".$user." ". 
 		"password=".$password." ".
 		"port=".$port." ".
 		"dbname=".$dbname
